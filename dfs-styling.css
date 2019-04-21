@@ -1,0 +1,122 @@
+body, html {
+	margin: 0px;
+	font-family: "Lato";
+	background: #FAFAFA;
+}
+
+body {
+	position: relative;
+}
+
+#body-left {
+	position: fixed;
+	width: 27%;
+	padding: 20px 20px 30px 50px;
+	border-right: 2px solid #cccccc;
+	background-color: #fafafa;
+	/* background credits to heropatterns.com */
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23babed4' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+#body-left h1 {
+	font-family: Crimson Text;
+}
+
+#body-left p {
+	font-size: 14px;
+}
+
+.feature-set h2 {
+	font-size: 18px;
+}
+
+.features-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.feature-box {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 20px 10px 0px;
+}
+
+.ft {
+	padding: 3px 7px 3px 7px;
+	background: #D3DFEF;
+	text-align: center;
+}
+
+.pos {
+	margin-bottom: 5px;
+}
+
+.ft:hover {
+	background: #4269A0;
+	color: white;
+	cursor: pointer;
+	transition-duration: 300ms;
+}
+
+#body-right {
+	position: absolute;
+	left: 40%;
+	padding: 30px;
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+}
+
+.header-tab {
+	margin-right: 30px;
+	margin-top: 20px;
+	padding: 10px 20px 10px 20px;
+	background: #E4E4E4;
+}
+
+.header-tab:hover {
+	cursor: pointer;
+	background: #AA5F5F;
+	color: white;
+	transition-duration: 300ms;
+}
+
+#eng-consonants {
+	margin: 30px 0px 30px 0px;
+}
+
+.ipa-table {
+	width: 650px;
+}
+
+th, td {
+	border: 1px solid #FAFAFA;
+}
+
+td.none {
+	background: #B9B9B9;
+}
+
+.eng-th {
+	background: #EBD9D9;
+	padding: 5px;
+	font-size: 15px;
+}
+
+.eng-active {
+	background: #E2E0E0;
+	text-align: center;
+}
+
+#eng-consonants p {
+	width: 650px;
+	font-size: 14px;
+	text-align: center;
+}
+
+#eng-vowels img {
+	width: 60%;
+}
