@@ -2,7 +2,151 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="./dfs-styling.css">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="./dfs-script.js"></script>
 	</head>
+	<body>
+		<div id="body-left">
+			<h1> Distinctive Feature Sorter </h1>
+			<p> Toggle the features below to see which sounds have <br>
+			the selected properties. Features can be stacked. </p>
+			<div id="major-class"> 
+				<h2> Major Class Features </h2>
+				<div class="features-row">
+					<div class="feature-box"> 
+						<div class="pos" id="+syl"> +syl </div>
+						<div class="neg" id="-syl"> -syl </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="pos" id="+son"> +son </div>
+						<div class="neg" id="-son"> -son </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="pos" id="+cons"> +cons </div>
+						<div class="neg" id="-cons"> -cons </div>
+					</div>
+				</div>
+			</div>
+			<div id="place"> 
+				<h2> Place Features </h2>
+				<div class="features-row">
+					<div class="feature-box"> 
+						<div class="pos" id="+high"> +high </div>
+						<div class="neg" id="-high"> -high </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="pos" id="+low"> +low </div>
+						<div class="neg" id="-low"> -low </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="pos" id="+back"> +back </div>
+						<div class="neg" id="-back"> -back </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="pos" id="+round"> +round </div>
+						<div class="neg" id="-round"> -round </div>
+					</div>
+				</div>
+				<div class="features-row">
+					<div class="feature-box"> 
+						<div class="pos" id="+tense"> +tense </div>
+						<div class="neg" id="-tense"> -tense </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="pos" id="+cor"> +cor </div>
+						<div class="neg" id="-cor"> -cor </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="pos" id="+ant"> +ant </div>
+						<div class="neg" id="-ant"> -ant </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="pos" id="+distr"> +distr </div>
+						<div class="neg" id="-distr"> -distr </div>
+					</div>
+				</div>
+			</div>
+			<div id="manner"> 
+				<h2> Manner Features </h2>
+				<div class="features-row">
+					<div class="feature-box"> 
+						<div class="feature pos +cont"> +cont </div>
+						<div class="feature neg -cont"> -cont </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="feature pos +delrel"> +del rel </div>
+						<div class="feature neg -delrel"> -del rel </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="feature pos +lat"> +lat </div>
+						<div class="feature neg -lat"> -lat </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="feature pos +nas"> +nas </div>
+						<div class="feature neg -nas"> -nas </div>
+					</div>
+				</div>
+			</div>
+			<div id="laryngeal"> 
+				<h2> Laryngeal Features </h2>
+				<div class="features-row">
+					<div class="feature-box"> 
+						<div class="feature pos +voi"> +voi </div>
+						<div class="feature neg -voi"> -voi </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="feature pos +cg"> +c.g. </div>
+						<div class="feature neg -cg"> -c.g. </div>
+					</div>
+					<div class="feature-box"> 
+						<div class="feature pos +sg"> +s.g. </div>
+						<div class="feature neg -sg"> -s.g. </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="body-right">
+			<div id="header"> 
+				<div class="header-tab"> English </div>
+				<div class="header-tab"> About </div>
+				<div class="header-tab"> Resources </div>
+			</div>
+			<div class="ipas">
+				<div id="eng-consonants">
+					<h2> English Consonants </h2>
+					<table class="ipa-table"> 
+						<tr> 
+							<td class="corner"></td>
+							<th class="eng-th" colspan="2"> Bilabial </th>
+							<th class="eng-th" colspan="2"> Labio <br> dental </th>
+							<th class="eng-th" colspan="2"> Inter <br> dental </th>
+							<th class="eng-th" colspan="2"> Alveolar </th>
+							<th class="eng-th" colspan="2"> Post <br> alveolar </th>
+							<th class="eng-th" colspan="2"> Palatal </th>
+							<th class="eng-th" colspan="2"> Velar </th>
+							<th class="eng-th" colspan="2"> Glottal </th>
+						</tr>
+						<tr>
+							<th class="eng-th"> Stop </th>
+							<td class="eng-active "> p </td>
+							<td class="eng-active"> b </td>
+							<td colspan="2"></td>
+							<td colspan="2"></td>
+							<td class="eng-active"> t </td>
+							<td class="eng-active"> d </td>
+							<td colspan="2"></td>
+							<td colspan="2"></td>
+							<td class="eng-active"> k </td>
+							<td class="eng-active"> g </td>
+							<td class="eng-active" colspan="2"> ʔ </td>
+						</tr>
+					</table>
+					<p> When symbols appear in a pair, the one to the left represents the voiceless consonant. </p>
+				</div>
+				<div id="eng-vowels"> </div>
+			</div>
+		</div>
+	</body>
 </html>
