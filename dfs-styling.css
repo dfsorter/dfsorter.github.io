@@ -11,6 +11,7 @@ body {
 #body-left {
 	position: fixed;
 	width: 27%;
+	height: 100%;
 	padding: 20px 20px 30px 50px;
 	border-right: 2px solid #cccccc;
 	background-color: #fafafa;
@@ -39,7 +40,7 @@ body {
 .feature-box {
 	display: flex;
 	flex-direction: column;
-	margin: 0px 20px 10px 0px;
+	margin: 0px 15px 10px 0px;
 }
 
 .ft {
@@ -61,7 +62,7 @@ body {
 
 #body-right {
 	position: absolute;
-	left: 40%;
+	left: 38%;
 	padding: 30px;
 }
 
@@ -117,6 +118,136 @@ td.none {
 	text-align: center;
 }
 
-#eng-vowels img {
-	width: 60%;
+#eng-vowels {
+	position: absolute;
+	width: 800px;
+	height: 520px;
 }
+
+.vowel-chart {
+	position: absolute;
+	left: 8%;
+	top: 15%;
+}
+
+.vowel-chart img {
+	width: 460px;
+	margin-top: 25px;
+	margin-left: 50px; 
+}
+
+.vowel-row {
+	position: absolute;
+	top: 0;
+	left: 15%;
+	width: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.vowel-col {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	height: 290px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.mouth-loc {
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.vpair {
+	display: flex;
+	flex-direction: row;
+}
+
+.vsingle {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.v {
+	padding: 5px;
+	background: #E2E0E0;
+	text-align: center;
+	margin: 4px;
+	min-width: 8px;
+	min-height: 22px;
+	font-size: 18px;
+}
+
+.vcell {
+	position: absolute;
+}
+
+.close-front {
+	top: 30px;
+	left: 70px;
+}
+
+.close-back {
+	top: 30px;
+	left: 437px;
+}
+
+.near-closemid-front {
+	top: 70px;
+	left: 160px;
+}
+
+.near-openmid-back {
+	top: 70px;
+	left: 380px;
+}
+
+.closemid-front {
+	top: 120px;
+	left: 130px;
+}
+
+.closemid-central {
+	top: 120px;
+	left: 285px;
+}
+
+.closemid-back {
+	top: 120px;
+	left: 437px;
+}
+
+.near-closemid-central {
+	top: 160px;
+	left: 320px;
+}
+
+.openmid-front {
+	top: 210px;
+	left: 190px;
+}
+
+.openmid-back {
+	top: 210px;
+	left: 437px;
+}
+
+.near-open-front {
+	top: 265px;
+	left: 220px;
+}
+
+.open-back {
+	top: 300px;
+	left: 437px;
+}
+
+#eng-vowels p {
+	font-size: 14px;
+	text-align: center;
+}
+
