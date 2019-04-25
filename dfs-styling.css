@@ -10,13 +10,17 @@ body {
 
 #body-left {
 	position: fixed;
-	width: 27%;
+	width: 32%;
 	height: 100%;
-	padding: 20px 20px 30px 50px;
 	border-right: 2px solid #cccccc;
 	background-color: #fafafa;
 	/* background credits to heropatterns.com */
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23babed4' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+#left-content {
+	position: absolute;
+	padding: 20px 20px 30px 50px;
 }
 
 #body-left h1 {
@@ -62,8 +66,18 @@ body {
 
 #body-right {
 	position: absolute;
-	left: 38%;
-	padding: 30px;
+	left: 32%;
+	width: 68%;
+	height: auto;
+	/*background: black;*/
+}
+
+#right-content {
+	position: absolute;
+	width: 75%;
+	padding: 30px 0px 30px 0px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 #header {
@@ -85,7 +99,19 @@ body {
 	transition-duration: 300ms;
 }
 
-#eng-consonants {
+#engipas-page {
+	/*display: none;*/
+}
+
+#about-page {
+	display: none;
+}
+
+a {
+	color: #AA5F5F;
+}
+
+#eng-consonants, #fyi {
 	margin: 30px 0px 30px 0px;
 }
 
@@ -251,3 +277,27 @@ td.none {
 	text-align: center;
 }
 
+.about-block {
+	margin-top: 40px; 
+	margin-bottom: 50px;
+}
+
+.about-block p {
+	text-align: justify;
+	letter-spacing: 0.3px;
+	line-height: 20px;
+}
+
+.about-block p b {
+	font-weight: 900;
+	text-decoration: underline;
+}
+
+.about-block ul {
+	list-style-type: circle;
+}
+
+.about-block li {
+	letter-spacing: 0.3px;
+	line-height: 20px;
+}
