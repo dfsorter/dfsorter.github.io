@@ -99,11 +99,19 @@ body {
 	transition-duration: 300ms;
 }
 
+#about-page {
+	display: none;
+}
+
+#gloss-page {
+	display: none;
+}
+
 #engipas-page {
 	/*display: none;*/
 }
 
-#about-page {
+#more-page {
 	display: none;
 }
 
@@ -111,6 +119,38 @@ a {
 	color: #AA5F5F;
 }
 
+/* About page styling */
+.about-block {
+	margin-top: 40px; 
+	margin-bottom: 50px;
+}
+
+.about-block p {
+	text-align: justify;
+	letter-spacing: 0.3px;
+	line-height: 20px;
+}
+
+.about-block p b {
+	font-weight: 900;
+	text-decoration: underline;
+}
+
+.about-block ul {
+	list-style-type: circle;
+}
+
+.about-block li {
+	letter-spacing: 0.3px;
+	line-height: 20px;
+}
+
+/* Gloss page styling */
+#gloss-content {
+	margin-top: 40px;
+}
+
+/* English IPA page styling */
 #eng-consonants, #fyi {
 	margin: 30px 0px 30px 0px;
 }
@@ -133,7 +173,7 @@ td.none {
 	font-size: 15px;
 }
 
-.eng-active {
+#eng-consonants .eng-active {
 	background: #E2E0E0;
 	text-align: center;
 }
@@ -277,27 +317,11 @@ td.none {
 	text-align: center;
 }
 
-.about-block {
-	margin-top: 40px; 
-	margin-bottom: 50px;
+/* More page styling */
+#more-content {
+	margin-top: 40px;
 }
 
-.about-block p {
-	text-align: justify;
-	letter-spacing: 0.3px;
-	line-height: 20px;
-}
-
-.about-block p b {
-	font-weight: 900;
-	text-decoration: underline;
-}
-
-.about-block ul {
-	list-style-type: circle;
-}
-
-.about-block li {
-	letter-spacing: 0.3px;
-	line-height: 20px;
+#more-content p {
+	line-height: 26px;
 }
