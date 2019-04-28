@@ -49,7 +49,7 @@ body {
 
 .ft {
 	padding: 3px 7px 3px 7px;
-	background: #D3DFEF;
+	background-color: #D3DFEF;
 	text-align: center;
 }
 
@@ -58,8 +58,9 @@ body {
 }
 
 .ft:hover {
-	background: #4269A0;
-	color: white;
+	/*background-color: #4269A0;
+	color: white;*/
+	transform: scale(1.1);
 	cursor: pointer;
 	transition-duration: 300ms;
 }
@@ -173,7 +174,7 @@ td.none {
 	font-size: 15px;
 }
 
-#eng-consonants .eng-active {
+.eng-active {
 	background: #E2E0E0;
 	text-align: center;
 }

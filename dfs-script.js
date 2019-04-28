@@ -6,29 +6,40 @@ $(document).ready(function() {
 		$(page_id).fadeIn();
 	})
 
+	// const intersection = (arr1, arr2) => arr1.filter(x => arr2.includes(x));
+
+
 	// a really ooof ((#ipas * #ft)sqred?) filtering logic. allows stacking.
-	/*let clickedFts = [];
-	let numOfIPAs = $(".eng-active").length;
-	let ipas = $(".eng-active").toArray();
+	// @source Bev at Focus on Function Web Design
+	var clickedFts = new Set();
 
 	 $(".ft").click(function() {
-		var currBg = $(this).css("background");
+		let currBg = $(this).css("background-color");
+		let currFtID = $(this).attr("id");
+		let currFt = currFtID.slice(1);
+
+		$(".eng-active").css({"background": "#E2E0E0", "color": "black"});
+		$(".eng-active").removeClass("selected");
+
 		// if current bg of the ft button is light blue, aka unclicked
-		if (currBg === "#D3DFEF") {
+		if (currBg === "rgb(211, 223, 239)") {
 			// change the ft button to clicked state 
 			$(this).css({"background": "#4269A0", "color": "white"});
-			// add this feature to the clickedFts array 
-			var currFtID = $(this).attr("id");
-			var currFt = "." + currFtID.slice(1);
-			clickedFts.push(currFt);
-
-			var numOfClicked = clickedFts.length;
-			// find ipas that have all features in clickedFts 
-			for (let i = 0; i < numOfIPAs; i++) {
-				var currIPA = ipas[i];
-
-			}
+			// add current feature to the clickedFts set
+			clickedFts.add(currFt);
+		} else {
+			// change color back to light blue
+			$(this).css({"background": "#D3DFEF", "color": "black"});
+			// remove current feature from the set
+			clickedFts.delete(currFt);
 		}
-		
-	}) */
+
+		// find ipas that have all features in clickedFts 
+		let ftArray = Array.from(clickedFts);
+		let selector = "." + ftArray.join(".");
+		$(selector).addClass("selected");
+
+		// change the color of selected ipas
+		$(".selected").css({"background": "#AA5F5F", "color": "white"});
+	}) 
 })
