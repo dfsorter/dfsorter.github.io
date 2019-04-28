@@ -151,6 +151,46 @@ a {
 	margin-top: 40px;
 }
 
+#gloss-content h2 {
+	margin-bottom: 10px;
+}
+
+.gloss-block {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.gloss-block h3 {
+	display: inline;
+	font-size: 18px;
+	padding: 0;
+	margin-bottom: 5px;
+}
+
+.gloss-block i {
+	font-size: 14px;
+}
+
+.gloss-block ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.gloss-block li {
+	letter-spacing: 0.3px;
+	line-height: 20px;
+}
+
+.gloss-block em {
+	padding-left: 3px;
+	padding-right: 2px;
+	font-style: normal;
+	font-family: monospace;
+	color: #AA5F5F;
+	border: 1px solid #AA5F5F;
+}
+
 /* English IPA page styling */
 #eng-consonants, #fyi {
 	margin: 30px 0px 30px 0px;
