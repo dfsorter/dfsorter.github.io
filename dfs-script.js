@@ -6,6 +6,7 @@ $(document).ready(function() {
 		$(page_id).fadeIn();
 	})
 
+	// remnant of an attempt at another approach using a mapping from feature to ipas
 	// const intersection = (arr1, arr2) => arr1.filter(x => arr2.includes(x));
 
 
