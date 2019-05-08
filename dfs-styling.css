@@ -272,6 +272,10 @@ a {
 }
 
 /* English IPA page styling */
+#engipas-page h2 {
+	display: inline;
+}
+
 #eng-consonants, #fyi {
 	margin: 30px 0px 30px 0px;
 }
