@@ -192,7 +192,11 @@ body {
 	/*display: none;*/
 }
 
-#more-page {
+#frnipas-page {
+	display: none;
+}
+
+#update-page {
 	display: none;
 }
 
@@ -271,12 +275,16 @@ a {
 	border: 1px solid #AA5F5F;
 }
 
-/* English IPA page styling */
+/* IPA pages styling */
 #engipas-page h2 {
 	display: inline;
 }
 
-#eng-consonants, #fyi {
+#frnipas-page h2 {
+	display: inline;
+}
+
+.consonants, #fyi {
 	margin: 30px 0px 30px 0px;
 }
 
@@ -303,13 +311,13 @@ td.none {
 	text-align: center;
 }
 
-#eng-consonants p {
+.consonants p {
 	width: 650px;
 	font-size: 14px;
 	text-align: center;
 }
 
-#eng-vowels {
+.vowels {
 	position: absolute;
 	width: 800px;
 	height: 520px;
@@ -437,16 +445,16 @@ td.none {
 	left: 437px;
 }
 
-#eng-vowels p {
+.vowels p {
 	font-size: 14px;
 	text-align: center;
 }
 
 /* More page styling */
-#more-content {
+#update-content {
 	margin-top: 40px;
 }
 
-#more-content p {
+#update-content p {
 	line-height: 26px;
 }
