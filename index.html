@@ -122,7 +122,7 @@
 					<div class="header-tab" id="gloss"> Gloss </div>
 					<div class="header-tab" id="engipas"> English </div>
 					<div class="header-tab" id="frnipas"> French </div>
-					<div class="header-tab" id="update"> Updates </div>
+					<div class="header-tab" id="log"> Log </div>
 				</div>
 
 				<div class="tab-page" id="about-page">
@@ -144,9 +144,10 @@
 						<h2> References & Special Thanks </h2>
 						<ul> 
 							<li> <a href="https://www.cambridge.org/core/books/introducing-phonology/BB866938443A8760191853EBFDC729D1" target="_blank"><i>Introducing Phonology</i></a> by David Odden, New York: Cambridge University Press, 2013. </li> 
-							<li> <a href="http://www.artoflanguageinvention.com/papers/features.pdf" target="_blank"> This distinctive features chart</a> on David J. Peterson's <i>The Art of Language Invention</i>.
-							<li> Professor <a href="http://linguistics.berkeley.edu/~jenks/" target="_blank">Peter Jenks</a>, as well as his lectures and slides for Linguistics 100: Introduction to Linguistic Science (Fall 2018). </li>
 							<li> Ohio State University's <a href="https://esl.ehe.osu.edu/wp-content/themes/esl/assets/ipacharts/" target="_blank">Interactive IPA Charts</a>. </li>
+							<li> <a href="http://www.artoflanguageinvention.com/papers/features.pdf" target="_blank"> This distinctive features chart</a> on David J. Peterson's <i>The Art of Language Invention</i>.
+							<li> <i>The sounds of French: An introduction</i> by Bernard Tranel, Cambridge: Cambridge University Press, 1987. </li>
+							<li> Professor <a href="http://linguistics.berkeley.edu/~jenks/" target="_blank">Peter Jenks</a>, as well as his lectures and slides for Linguistics 100: Introduction to Linguistic Science (Fall 2018). </li>
 							<li> The <a href="https://en.wikipedia.org/wiki/Distinctive_feature" target="_blank">Wikipedia page</a> on distinctive features. </li>
 							<li> <a href="http://blog.fofwebdesign.co.uk/28-content-filter-refine-with-multi-category-select-show-selected-or-hide-selected">Bev's blog entry</a> about filter implementation on <i>Focus on Function Web Design</i>. </li>
 							<li> The <a href="http://wdd.io/" target="_blank">Web Design Decal</a> at UC Berkeley. </li>
@@ -360,6 +361,10 @@
 							<div class="vcell vsingle near-open-front"> 
 								<div class="eng-active v syl son -cons -high lo -back -round"> æ </div>
 							</div>
+							<div class="vcell vpair open-front"> 
+								<div class="v v-none"> </div>
+								<div class="v v-none"> </div>
+							</div>
 							<div class="vcell vpair open-back"> 
 								<div class="eng-active v syl son -cons -high lo back -round"> ɑ </div>
 								<div class="eng-active v syl son -cons -high lo back round"> ɒ </div>
@@ -481,7 +486,7 @@
 						<p> When symbols appear in a pair, the one to the right represents the voiced consonant. Areas in dark gray represent articulations judged impossible. <br>
 					</div>
 					<div class="vowels"> 
-						<p> <h2>French Vowels</h2> <small>&nbsp; (WIP; feature data taken from Odden)</small> </p>
+						<p> <h2>French Vowels</h2> <small>&nbsp; (feature data taken from Odden)</small> </p>
 						<div class="vowel-chart">
 							<img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Blank_vowel_trapezoid.svg" />
 							<div class="vowel-row"> 
@@ -497,48 +502,62 @@
 							</div>
 							<div class="vcell vpair close-front"> 
 								<div class="eng-active v syl son -cons high -lo -back -round tense"> i </div>
-								<div class="v v-none"></div>
+								<div class="eng-active v syl son -cons high -lo -back round tense"> y </div>
 							</div>
 							<div class="vcell vpair close-back"> 
 								<div class="v v-none"> </div>
 								<div class="eng-active v syl son -cons high -lo back round tense"> u </div>
 							</div>
 							<div class="vcell vpair near-closemid-front"> 
-								<div class="eng-active v syl son -cons high -lo -back -round -tense"> ɪ </div>
+								<div class="v v-none"> </div>
 								<div class="v v-none"> </div>
 							</div>
 							<div class="vcell vsingle near-openmid-back"> 
-								<div class="eng-active v syl son -cons high -lo back round -tense"> ʊ </div>
+								<div class="v v-none"> </div>
 							</div>
 							<div class="vcell vpair closemid-front"> 
 								<div class="eng-active v syl son -cons -high -lo -back -round tense"> e </div>
-								<div class="v v-none"> </div>
+								<div class="eng-active v syl son -cons -high -lo -back round tense"> ø </div>
 							</div>
 							<div class="vcell vpair closemid-central"> 
 								<div class="v v-none"> </div>
 								<div class="v v-none"> </div>
+							</div>
+							<div class="vcell vsingle closemid-back-nas"> 
+								<div class="eng-active v syl son -cons -high -lo back round tense nas"> õ </div>
 							</div>
 							<div class="vcell vpair closemid-back"> 
 								<div class="v v-none"> </div>
 								<div class="eng-active v syl son -cons -high -lo back round tense"> o </div>
 							</div>
 							<div class="vcell vsingle near-closemid-central"> 
-								<div class="eng-active v syl son -cons -high -lo back -round tense"> ə </div>
+								<div class="v v-none"> </div>
+							</div>
+							<div class="vcell vpair openmid-front-nas"> 
+								<div class="eng-active v syl son -cons -high -lo -back -round -tense nas"> ɛ̃ </div>
+								<div class="eng-active v syl son -cons -high -lo -back round -tense nas"> œ̃ </div>
 							</div>
 							<div class="vcell vpair openmid-front"> 
 								<div class="eng-active v syl son -cons -high -lo -back -round -tense"> ɛ </div>
-								<div class="v v-none"> </div>
+								<div class="eng-active v syl son -cons -high -lo -back round -tense"> œ </div>
 							</div>
 							<div class="vcell vpair openmid-back"> 
-								<div class="eng-active v syl son -cons -high -lo back -round -tense"> ʌ </div>
+								<div class="v v-none"> </div>
 								<div class="eng-active v syl son -cons -high -lo back round -tense"> ɔ </div>
 							</div>
 							<div class="vcell vsingle near-open-front"> 
-								<div class="eng-active v syl son -cons -high lo -back -round"> æ </div>
+								<div class="v v-none"> </div>
+							</div>
+							<div class="vcell vpair open-front"> 
+								<div class="eng-active v syl son -cons -high lo -back -round"> a </div>
+								<div class="v v-none"> </div>
+							</div>
+							<div class="vcell vsingle open-back-nas"> 
+								<div class="eng-active v syl son -cons -high lo back -round nas"> ɑ̃ </div>
 							</div>
 							<div class="vcell vpair open-back"> 
 								<div class="eng-active v syl son -cons -high lo back -round"> ɑ </div>
-								<div class="eng-active v syl son -cons -high lo back round"> ɒ </div>
+								<div class="v v-none"> </div>
 							</div>
 							<p> When symbols appear in a pair, the one to the right represents <br> the rounded vowel. </p>
 						</div>
@@ -546,10 +565,10 @@
 				</div>
 
 
-				<div class="tab-page" id="update-page"> 
-					<div id="update-content"> 
+				<div class="tab-page" id="log-page"> 
+					<div id="log-content"> 
 						<h2> Recent Updates </h2>
-						<p> 08/05/19: Added a page for French sounds (since I recently started taking French :D)! <br> The vowels are still just a placeholder for now though. </p>
+						<p> 08/06/19: Added a page for French sounds (since I recently started taking French)! <br> TODO: clean up css, modify js to search only on current page? </p>
 					</div>
 				</div>
 			</div>
