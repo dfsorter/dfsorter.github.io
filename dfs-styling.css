@@ -311,6 +311,12 @@ td.none {
 	text-align: center;
 }
 
+.sd:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+	transition-duration: 300ms;
+}
+
 .consonants p {
 	width: 650px;
 	font-size: 14px;
