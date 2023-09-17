@@ -22,7 +22,7 @@ body {
 
 #left-content {
 	position: relative;
-	padding: 20px 50px 25px 50px;
+	padding: 15px 40px 25px 50px;
 }
 
 #body-left h1 {
@@ -32,7 +32,7 @@ body {
 }
 
 #body-left p {
-	font-size: 13px;
+	font-size: 12px;
 	margin-bottom: 20px;
 }
 
@@ -41,25 +41,27 @@ body {
 }
 
 .feature-set h2 {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .features-row {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	margin-bottom: 5px;
 }
 
 .feature-box {
 	display: flex;
 	flex-direction: column;
-	margin: 0px 15px 10px 0px;
+	margin: 0px 10px 10px 0px;
 }
 
 .ft {
-	padding: 3px 7px 3px 7px;
+	padding: 3px 5px 3px 5px;
 	background-color: #D3DFEF;
 	text-align: center;
+	font-size: 15px;
 }
 
 .pos {

@@ -12,8 +12,11 @@
 		<div id="body-left">
 			<div id="left-content">
 				<h1> Distinctive Feature Sorter </h1>
-				<p> Toggle the features/sounds to see which sounds associate with
-				the selected features and vice versa. Stackable. </p>
+				<!-- <p> Toggle the features/sounds to see which sounds associate with
+				the selected features and vice versa. Stackable. <br> -->
+				<p> <b>Disclaimer</b>: The classification of features varies greatly from author to author. 
+				This is only meant as a visualization tool for students; please consult your instructor 
+				in case of discrepencies between this sorter and other sources.</p>
 				<div class="feature-set"> 
 					<h2> Major Class Features </h2>
 					<div class="features-row">
@@ -45,6 +48,10 @@
 						<div class="feature-box"> 
 							<div class="ft pos" id="flo"> +low </div>
 							<div class="ft neg" id="f-lo"> -low </div>
+						</div>
+						<div class="feature-box"> 
+							<div class="ft pos" id="ffront"> +fr </div>
+							<div class="ft neg" id="f-front"> -fr </div>
 						</div>
 						<div class="feature-box"> 
 							<div class="ft pos" id="fback"> +bk </div>
@@ -146,13 +153,14 @@
 					</div>
 					<div class="about-block">
 						<h2> About this site </h2>
-						<p> When I took an introductory linguistics course as a linguistics student at college, I was assigned the typical task of finding an optimal set of distinctive features that can pick out certain sounds from the sound inventory of a language. As I was doing the assignments, I kept thinking that it'd be really nice to have some kind of tool that would visualize the sorting process for me – which eventually led to this project. I hope this little tool would be of some help to linguistics students in their studies. </p>
+						<p> When I took an introductory linguistics course as a student at college, I was assigned the typical task of finding an optimal set of distinctive features that can pick out certain sounds from the sound inventory of a language. As I was doing the assignments, I kept thinking that it'd be really nice to have some kind of tool that would visualize the sorting process for me – which eventually led to this project. I hope this little tool would be of some help to linguistics students in their studies. </p>
 						<p> For bug report or any comments/suggestions, please feel free to <a href="mailto:cyntz@mit.edu">email me</a>.</p>
 					</div>
 					<div class="about-block">
 						<h2> References & Special Thanks </h2>
 						<ul> 
 							<li> <a href="https://www.cambridge.org/core/books/introducing-phonology/BB866938443A8760191853EBFDC729D1" target="_blank"><i>Introducing Phonology</i></a> by David Odden, New York: Cambridge University Press, 2013. </li> 
+							<li> <a href="https://linguistics.ucla.edu/people/hayes/IP/" target="_blank"><i>Introductory Phonology</i></a> by Bruce Hayes, Malden, MA: Wiley-Blackwell, 2009. </li>
 							<li> Ohio State University's <a href="https://esl.ehe.osu.edu/wp-content/themes/esl/assets/ipacharts/" target="_blank">Interactive IPA Charts</a>. </li>
 							<li> Professor <a href="http://linguistics.berkeley.edu/~jenks/" target="_blank">Peter Jenks</a>, as well as his lectures and slides for Linguistics 100: Introduction to Linguistic Science (Fall 2018). </li>
 							<li> Professor <a href="https://web.mit.edu/albright/www/" target="_blank">Adam Albright</a>'s guide to features.</li>
@@ -181,6 +189,7 @@
 								<li><em>dorsal</em> articulation involing the tongue body.</li>
 								<li><em>high</em> the body of the tongue raised above neutral position.</li>
 								<li><em>low</em> the body of the tongue lowered below neutral position.</li>
+								<li><em>front</em> the body of the tongue fronted from neutral position.</li>
 								<li><em>back</em> the body of the tongue retracted from neutral position.</li>
 								<li><em>tense</em> the body of the tongue more stiffly/extremely positioned.</li>
 								<li><em>labial</em> articulation involving the lips.</li>
@@ -236,9 +245,9 @@
 								<td class="sd eng-active c -syl -son cons -cont -delrel -lat -nas voi -cg -sg ant cor -distr cor -dor -stri -round" id="sd"> d </td>
 								<td colspan="2"></td>
 								<td colspan="2"></td>
-								<td class="sd eng-active c -syl -son cons -cont -delrel -lat -nas -voi -cg -sg -cor high -lo -back -tense -lab dor -stri -round" id="sk"> k </td>
-								<td class="sd eng-active c -syl -son cons -cont -delrel -lat -nas voi -cg -sg -cor high -lo -back -tense -lab dor -stri -round" id="sg"> g </td>
-								<td class="sd eng-active c -syl son -cons -cont -delrel -stri -lat -nas -voi cg -sg -cor -lab -round" id="sglot" colspan="2"> ʔ </td>
+								<td class="sd eng-active c -syl -son cons -cont -delrel -lat -nas -voi -cg -sg -cor high -lo -lab dor -stri -round" id="sk"> k </td>
+								<td class="sd eng-active c -syl -son cons -cont -delrel -lat -nas voi -cg -sg -cor high -lo -lab dor -stri -round" id="sg"> g </td>
+								<td class="sd eng-active c -syl -son cons -cont -delrel -stri -lat -nas -voi cg -sg -cor -lab -round" id="sglot" colspan="2"> ʔ </td>
 							</tr>
 							<tr> 
 								<th class="eng-th"> Fricative </th>
@@ -253,7 +262,7 @@
 								<td class="sd eng-active c -syl -son cons cont -delrel -lat -nas voi -cg -sg cor -ant distr -lab -round -dor stri" id="szh"> ʒ </td>
 								<td colspan="2"></td>
 								<td colspan="2"></td>
-								<td class="sd eng-active c -syl son cons cont -delrel -lat -nas -voi -cg sg -cor -stri -lab -round" id="sh"> h </td>
+								<td class="sd eng-active c -syl -son -cons cont -delrel -lat -nas -voi -cg sg -cor -stri -lab -round" id="sh"> h </td>
 								<td colspan="1"> </td>
 							</tr>
 							<tr>
@@ -287,17 +296,17 @@
 								<td class="sd eng-active c -syl son cons -cont -delrel -lat nas voi -cg -sg cor ant -distr -dor -lab -round -stri" id="sn" colspan="2"> n </td>
 								<td colspan="2"></td>
 								<td colspan="2"></td>
-								<td class="sd eng-active c -syl son cons -cont -delrel -lat nas voi -cg -sg -lab -round -cor dor high -lo -back -tense -stri" id="sng" colspan="2"> ŋ </td>
+								<td class="sd eng-active c -syl son cons -cont -delrel -lat nas voi -cg -sg -lab -round -cor dor high -lo -stri" id="sng" colspan="2"> ŋ </td>
 								<td class="none" colspan="2"></td>
 							</tr>
 							<tr>
 								<th class="eng-th"> Approximant </th>
-								<td class="sd eng-active c -syl son -cons cont -delrel -lat -nas voi -cg -sg -stri lab round -cor dor high -lo back tense" id="sw" colspan="2"> w </td>
+								<td class="sd eng-active c -syl son -cons cont -delrel -lat -nas voi -cg -sg -stri lab round -cor dor high -lo back tense -front" id="sw" colspan="2"> w </td>
 								<td colspan="2"></td>
 								<td colspan="2"></td>
-								<td class="sd eng-active c -syl son cons cont -delrel -stri -lat -nas voi -cg -sg -lab -round cor ant -distr -dor" id="ser" colspan="2"> ɹ </td>
+								<td class="sd eng-active c -syl son -cons cont -delrel -stri -lat -nas voi -cg -sg -lab -round cor ant -distr -dor" id="ser" colspan="2"> ɹ </td>
 								<td colspan="2"></td>
-								<td class="sd eng-active c -syl son -cons cont -delrel -lat -nas -stri voi -cg -sg -lab -round -cor dor high -lo -back tense" id="sj" colspan="2"> j </td>
+								<td class="sd eng-active c -syl son -cons cont -delrel -lat -nas -stri voi -cg -sg -lab -round -cor dor high -lo front -back tense" id="sj" colspan="2"> j </td>
 								<td colspan="2"></td>
 								<td class="none" colspan="2"></td>
 							</tr>
@@ -331,22 +340,22 @@
 								<div class="mouth-loc"> Open </div>
 							</div>
 							<div class="vcell vpair close-front"> 
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor high -lo -back tense" id="si"> i </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor high -lo front -back tense" id="si"> i </div>
 								<div class="v v-none"></div>
 							</div>
 							<div class="vcell vpair close-back"> 
 								<div class="v v-none"> </div>
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg lab round -cor dor high -lo back tense" id="su"> u </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg lab round -cor dor high -lo -front back tense" id="su"> u </div>
 							</div>
 							<div class="vcell vpair near-closemid-front"> 
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor high -lo -back -tense" id="si0"> ɪ </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor high -lo front -back -tense" id="si0"> ɪ </div>
 								<div class="v v-none"> </div>
 							</div>
 							<div class="vcell vsingle near-openmid-back"> 
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg lab round -cor dor high -lo back -tense" id="su0"> ʊ </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg lab round -cor dor high -lo -front back -tense" id="su0"> ʊ </div>
 							</div>
 							<div class="vcell vpair closemid-front"> 
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high -lo -back tense" id="se"> e </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high -lo front -back tense" id="se"> e </div>
 								<div class="v v-none"> </div>
 							</div>
 							<div class="vcell vpair closemid-central"> 
@@ -355,28 +364,28 @@
 							</div>
 							<div class="vcell vpair closemid-back"> 
 								<div class="v v-none"> </div>
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg lab round -cor dor -high -lo back tense" id="so"> o </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg lab round -cor dor -high -lo -front back tense" id="so"> o </div>
 							</div>
 							<div class="vcell vsingle near-closemid-central"> 
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high -lo -tense" id="sschwa"> ə </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high -lo -front -back -tense" id="sschwa"> ə </div>
 							</div>
 							<div class="vcell vpair openmid-front"> 
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high -lo -back -tense" id="se0"> ɛ </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high -lo front -back -tense" id="se0"> ɛ </div>
 								<div class="v v-none"> </div>
 							</div>
 							<div class="vcell vpair openmid-back"> 
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high -lo back -tense" id="su2"> ʌ </div>
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg lab round -cor dor -high -lo back -tense" id="so2"> ɔ </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high -lo -front back -tense" id="su2"> ʌ </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg lab round -cor dor -high -lo -front back -tense" id="so2"> ɔ </div>
 							</div>
 							<div class="vcell vsingle near-open-front"> 
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high lo -back tense" id="sae"> æ </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high lo front -back" id="sae"> æ </div>
 							</div>
 							<div class="vcell vpair open-front"> 
 								<div class="v v-none"> </div>
 								<div class="v v-none"> </div>
 							</div>
 							<div class="vcell vpair open-back"> 
-								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high lo back tense" id="sa"> ɑ </div>
+								<div class="sd eng-active v syl son -cons cont -delrel -stri -nas -lat voi -sg -cg -lab -round -cor dor -high lo -front back tense" id="sa"> ɑ </div>
 								<div class="v v-none"> </div>
 							</div>
 							<p> When symbols appear in a pair, the one to the right represents <br> the rounded vowel. </p>
